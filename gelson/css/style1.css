@@ -1,0 +1,230 @@
+body,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Fixar o menu*/
+.fixo {
+    position: fixed;
+    left: 0;
+    right:0;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    opacity: 75%;
+}
+
+
+/* Altura do menu */
+body {
+    padding-top: 147px;
+}
+
+/*Cor geral fundo do menu, tamanho e et..*/
+.header {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    border-bottom-style:solid;
+    border-bottom-width: 8px;
+    border-bottom-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+#logo {
+    width: 50px;
+    height: 50px;
+    border: 1px double white;
+    border-radius: 50%;
+}
+/*Posicionamento do menu*/
+.nav {
+    margin: auto;
+
+}
+.menu {
+    display: flex;
+    padding: 30px;
+}
+
+#inicio {
+    background-color: rgb(30, 112, 179);
+    color: white;
+}
+/*Espaçamento lateralde cada icone dos menus*/
+.menu li {
+    /*margin-left: 15px;*/
+    width: 120px;
+}
+
+/*Cor da frente, background, texto do menu*/
+.menu li a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    color: white;
+
+}
+/*Efeito no menu*/
+.menu li a:hover {
+    background-color: rgb(30, 112, 179);
+}
+
+
+/*Estilização do parâgrafo*/
+.grupo {
+    margin:0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 50px;
+    padding-bottom: 20px;
+    transition: all 0.7s ease-in-out;
+    border-top-style: double;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0d8099;
+    background:rgba(9, 11, 8, 0.31);
+    font-size: 96px;
+    font-weight: 500px;
+    font-family:
+}
+/*Estilização do nome grupo G5*/
+.grupo:hover {
+    transition: all 0.7s ease-in-out;
+    color: #010a12;
+    background-color: rgba(87,88,89, 0.2);
+    text-shadow: 1px 2px 4px #093e70;
+}
+
+/*Background com a imagem*/
+.main {
+    width: 100%;
+    height: 570px;
+    margin: auto;
+    margin-top: 8px;
+    opacity: 0.7;
+    background-image: url(https://thaisfigueiredo.arq.br/images/uploaded/imagem/b1f062479135c41167312e7113e73644.jpg);
+    background-size: cover;
+}
+/*Textos nos background da imagem*/
+h1.texto {
+    width: 80%;
+    height: 180px;
+    margin: auto;
+    margin-top: 2px;
+    padding-top: 50px;
+    text-align: center;
+    background: black;
+    -webkit-background-clip: text;
+    font-size: 50px;
+    font-weight: 970;
+    -webkit-text-fill-color:transparent;
+}
+h2.texto1 {
+    width: 80%;
+    height: 180px;
+    margin: auto;
+
+    padding-top: 12%;
+    text-align: center;
+    background: black;
+    -webkit-background-clip: text;
+    font-size: 60px;
+    font-weight: 980;
+    -webkit-text-fill-color:transparent;
+}
+
+/*Linha com as novidades*/
+.row {
+    width: 93%;
+    margin: auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #777777;
+    background: #eeeeee;
+}
+.italico {
+    height: 20px;
+    color:
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16.8px;
+    line-height: 24px;
+
+
+}
+.negrito {
+    letter-spacing: normal;
+
+    color: #050505;
+
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16.8px;
+    line-height: 24px;
+}
+
+/*Deixando as imagens responsivas para aumentar no tamanho maximo
+do container*/
+img {
+    max-width: 100%;
+    height: 300px;
+    transition: transform .2s;
+    display: block;
+}
+img:hover {
+
+    transform: scale(1.5);
+}
+/*Colocando cada item do lado do outro*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1000px;
+}
+
+/*Falando com a div dentro do flex*/
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.titulo-produtos {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    color: #595959;
+}
+.span-produtos {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 13px;
+    line-height: 10px;
+    color: #595959;
+}
+
+/*Rodapé*/
+.footer {
+    background-color: #eff0f1;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 15px;
+    color: black;
+}
