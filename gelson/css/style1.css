@@ -1,3 +1,8 @@
+/*background fundo inicio*/
+
+
+/*Background fundo fim*/
+
 body,
 ul,
 li,
@@ -29,6 +34,21 @@ a {
 /* Altura do menu */
 body {
     padding-top: 147px;
+    background: linear-gradient(-45deg, #bababd, #edede5, #83756b, #c7bbbc);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /*Cor geral fundo do menu, tamanho e et..*/
@@ -47,7 +67,7 @@ header {
 #logo {
     display: flex;
     position: relative;
-    right: 30px;
+    right: 95px;
     margin: auto;
 }
 #logo  img {
@@ -59,6 +79,8 @@ header {
 }
 .menu {
     display: flex;
+    position: relative;
+    right: 80px;
     align-items: center;
 }
 nav ul,
@@ -111,17 +133,13 @@ nav a:hover {
     color: white;
     text-align: center;
     font-size: 95px;
-
+    animation: pulse 5s infinite;
 }
-
-
-
-/*Estilização do nome grupo G5*/
-.grupo:hover {
-    transition: all 0.7s ease-in-out;
-    color: #010a12;
-    background-color: rgba(87,88,89, 0.2);
-    text-shadow: 1px 2px 4px #093e70;
+@keyframes pulse{
+    0% {color: #3d87d5}
+    25% {color: #7df0f0}
+    50% {color: #fa48ed}
+    100% {color: #e7872e}
 }
 
 /*Background com a imagem*/
@@ -140,10 +158,13 @@ nav a:hover {
 }
 .text p {
     font-size: 50px;
-    color: black;
+    color: rgba(59, 169, 204, 0.44);
     text-align: center;
     line-height: 80px;
     font-weight: 970;
+}
+.text p:hover {
+    color: red;
 }
 
 /*Textos nos background da imagem*/
@@ -208,17 +229,23 @@ img {
 
 .titulo-produtos {
     font-family: "Titillium Web", sans-serif;
-    font-size: 15px;
-    margin-top: 10px;
+    font-size: 13px;
+    margin-top: 13px;
     text-transform: uppercase;
     text-align: center;
     justify-content: center;
     color: #595959;
 }
-.span-produtos {
+.span-produtos span {
+    display: flex;
+    flex-wrap: wrap;
     font-family: "Titillium Web", sans-serif;
-    font-size: 13px;
-    line-height: 10px;
+    font-size: 12px;
+    justify-content: center;
+    line-height: 13px;
+    padding: 0;
+    margin-bottom: 3px;
+
     color: #595959;
 }
 
@@ -312,7 +339,7 @@ img {
         position: relative;
         top: -100px;
         margin-top:25px;
-        font-size: 25px;
+        font-size: 30px;
         line-height: 25px;
         padding: 8px;
     }
@@ -328,10 +355,12 @@ img {
         width: 100%;
         z-index: 999;
     }
-
-    .
-
-
+    .titulo-produtos {
+        font-size: 14px;
+    }
+    .span-produtos {
+        font-size: 12px;
+    }
 
 
 
