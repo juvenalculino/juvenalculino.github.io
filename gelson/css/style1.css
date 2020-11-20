@@ -21,6 +21,7 @@ a {
     top: 0;
     width: 100%;
     background-color: #000000;
+    z-index:999;
     opacity: 75%;
 }
 
@@ -31,77 +32,90 @@ body {
 }
 
 /*Cor geral fundo do menu, tamanho e et..*/
-.header {
-
-
+header {
     display: flex;
-    flex-wrap: wrap;
-    margin:auto;
-    border-bottom-style:solid;
-    border-bottom-width: 8px;
-    border-bottom-color: white;
+    justify-content: center;
+    height: 150px;
+    margin-bottom: 3px;
+}
+.container {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    width: 990px;
 
 }
 #logo {
+    display: flex;
+    position: relative;
+    right: 30px;
+    margin: auto;
+}
+#logo  img {
     width: 50px;
     height: 50px;
+
     border: 1px double white;
     border-radius: 50%;
 }
-/*Posicionamento do menu*/
-.nav {
-    margin: auto;
-
-}
 .menu {
     display: flex;
-    padding: 30px;
+    align-items: center;
+}
+nav ul,
+nav li {
+    list-style: none;
+    margin-right: -8px;
+
+}
+nav ul {
+    display: flex;
 }
 
-#inicio {
-    background-color: rgb(30, 112, 179);
-    color: white;
-}
-/*Espaçamento lateralde cada icone dos menus*/
-.menu li {
-    /*margin-left: 15px;*/
-    width: 120px;
-}
-
-/*Cor da frente, background, texto do menu*/
-.menu li a {
+nav li a {
     display: block;
-    text-align: center;
-    padding: 15px;
-    color: white;
-
-}
-/*Efeito no menu*/
-.menu li a:hover {
-    background-color: rgb(30, 112, 179);
-}
-
-
-/*Estilização do parâgrafo*/
-.grupo {
-    margin:0;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 50px;
-    padding-bottom: 20px;
-    transition: all 0.7s ease-in-out;
-    border-top-style: double;
-    text-align: center;
+    padding: 13px;
+    text-decoration: none;
     text-transform: uppercase;
-    color: #0d8099;
-    background:rgba(9, 11, 8, 0.31);
-    font-size: 96px;
-    font-weight: 500px;
-    font-family:
+    color: #727272;
 }
+nav .active a,
+nav a:hover {
+    background-color: #39AAE1;
+    color: white;
+}
+/*Estilização do subtitle*/
+.grupo{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#120078,#9d0191,#fd3a69,#fbf6f0,#fecd1a);
+    background-size: 150% 150%;
+    animation: colors 15s ease infinite;
+}
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#title {
+    color: white;
+    text-align: center;
+    font-size: 95px;
+
+}
+
+
+
 /*Estilização do nome grupo G5*/
 .grupo:hover {
     transition: all 0.7s ease-in-out;
@@ -111,42 +125,30 @@ body {
 }
 
 /*Background com a imagem*/
-.main {
+.imagem img {
     width: 100%;
     height: 570px;
-    margin: auto;
-    margin-top: 8px;
-    opacity: 0.7;
-    background-image: url(https://thaisfigueiredo.arq.br/images/uploaded/imagem/b1f062479135c41167312e7113e73644.jpg);
-    background-size: cover;
-}
-/*Textos nos background da imagem*/
-h1.texto {
-    width: 80%;
-    height: 180px;
-    margin: auto;
-    margin-top: 2px;
-    padding-top: 50px;
-    text-align: center;
-    background: black;
-    -webkit-background-clip: text;
-    font-size: 50px;
-    font-weight: 970;
-    -webkit-text-fill-color:transparent;
-}
-h2.texto1 {
-    width: 80%;
-    height: 180px;
-    margin: auto;
 
-    padding-top: 12%;
-    text-align: center;
-    background: black;
-    -webkit-background-clip: text;
-    font-size: 60px;
-    font-weight: 980;
-    -webkit-text-fill-color:transparent;
 }
+.text {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    position: absolute;
+    top: 85%;
+    width:100%;
+}
+.text p {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 970;
+}
+
+/*Textos nos background da imagem*/
+
+
 
 /*Linha com as novidades*/
 .row {
@@ -186,10 +188,7 @@ img {
     transition: transform .2s;
     display: block;
 }
-img:hover {
 
-    transform: scale(1.5);
-}
 /*Colocando cada item do lado do outro*/
 .flex {
     display: flex;
@@ -197,6 +196,9 @@ img:hover {
     margin: auto;
     max-width: 1000px;
 }
+
+
+
 
 /*Falando com a div dentro do flex*/
 .flex > div {
@@ -221,10 +223,125 @@ img:hover {
 }
 
 /*Rodapé*/
-.footer {
+#footer {
     background-color: #eff0f1;
     text-align: center;
     padding: 50px 0;
     font-size: 15px;
     color: black;
+
+}
+.footer_area {
+    position: relative;
+    bottom: -40px;
+    font-size: 13px;
+}
+/*Menu celular*/
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line {
+    height: 2px;
+    background-color: #39aae1;
+}
+/*Responsividade*/
+@media (max-width:600px) {
+
+
+    .container {
+        flex-direction: column;
+    }
+    #logo {
+        display: flex;
+        position: relative;
+        right: 50px;
+    }
+
+    #logo img {
+        display: flex;
+        width: 90px;
+        height: 50px;
+        border-radius: 0;
+        border: 1px solid red;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    header {
+        height: auto;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .menuMobile:hover {
+        background-color: #25faff;
+        color: #000000;
+    }
+
+    .grupo {
+        margin-top: -20px;
+        height: 30vh;
+        width: 100%;
+        background-color: white;
+    }
+    #title {
+        font-size: 55px;
+    }
+
+    .imagem {
+        max-height: 100%;
+    }
+
+    .text p {
+        position: relative;
+        top: -100px;
+        margin-top:25px;
+        font-size: 25px;
+        line-height: 25px;
+        padding: 8px;
+    }
+
+    .flex {
+        display: flex;
+        text-align: center;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .flex img {
+        width: 100%;
+        z-index: 999;
+    }
+
+    .
+
+
+
+
+
+    #footer {
+        font-size: 10px;
+    }
+    .footer_area {
+        display: block;
+        position: relative;
+
+        bottom: -50px;
+    }
 }
