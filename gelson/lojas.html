@@ -4,36 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style1.css" type="text/css" />
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                }else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
     <title>Grupo G5</title>
 </head>
     <body>
-        <header class="header fixo">
-            <img id="logo" src="images/logo.jpeg">
-            <nav class="nav">
-                <ul class="menu">
-                    <li><a id="inicio" href="index1.html">Inicio</a></li>
-                    <li><a href="lojas.html">Lojas</a></li>
-                    <li><a href="/">Contato</a></li>
-                    <li><a href="/">Sobre</a></li>
+        <header class="fixo">
 
-                </ul>
-            </nav>
-        </header>
-        <p class="grupo">GRUPO G5</p>
-
-
-        <main>
-
-            <div class="main">
-                <h1 class="texto">Gelson Materiais de Construção</h1>
-                <h2 class="texto1">Griffe Móveis & Eletros</h2>
+            <div class="container">
+                <div id="logo">
+                    <a href=""><img src="./images/logo.jpeg"></a>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
+                        <ul>
+                            <li class="active"><a href="index1.html">Inicio</a> </li>
+                            <li><a href="lojas.html">Lojas</a> </li>
+                            <li><a href="">Contato</a> </li>
+                            <li><a href="">Sobre</a> </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
+        </header>
+        <div class="grupo">
+            <h1 id="title">GRUPO G5</h3>
+        </div>
 
+        <main>
+            <div class="imagem">
+                <img src="./images/back.jpg">
+            </div>
+            <div class="text">
+                <p>Gelson Materiais de Construção</p>
+                <p>&</p>
+                <p>Griffe Móveis & Eletros</p>
+            </div>
         </main>
-
-        <footer class="footer">
-            <p>Todos os direitos reservados</p>
-        </footer>
-    </body>
-</html>
+        <footer>
+           <footer id="footer">
+            <div class=footer_area>
+            Copyright - Todos os direitos reservados - BY: Juvenal Culino
+            </div>
+        </footer>     
+        </footer>    
+        
+        
