@@ -304,8 +304,11 @@ img {
         display: none;
         position: absolute;
         left: 0;
-        width: 100%;
+        width: 170%;
         background-color: #ffffff;
+    }
+    nav ul li {
+        background: white;
     }
     header {
         height: auto;
@@ -317,7 +320,7 @@ img {
         justify-content: space-around;
     }
     .menuMobile:hover {
-        background-color: #25faff;
+        background-color: rgba(#25faff, 0.41);
         color: #000000;
     }
 
@@ -362,15 +365,10 @@ img {
         font-size: 12px;
     }
 
-
-
-    #footer {
-        font-size: 8px;
-    }
     .footer_area {
         display: block;
         position: relative;
-
         bottom: -50px;
+        font-size: 12px;
     }
 }
