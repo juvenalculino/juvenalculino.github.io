@@ -294,7 +294,7 @@ img {
         width: 90px;
         height: 50px;
         border-radius: 0;
-        border: 1px solid red;
+        border: 1px solid black;
     }
     header .container {
         flex-direction: row;
@@ -365,7 +365,7 @@ img {
 
 
     #footer {
-        font-size: 10px;
+        font-size: 8px;
     }
     .footer_area {
         display: block;
