@@ -320,10 +320,10 @@ img {
         flex-direction: column;
         justify-content: space-around;
     }
-    .menuMobile:hover {
-        background-color: rgba(#25faff, 0.41);
-        color: #000000;
+    .mm_line {
+        background-color: white;
     }
+
 
     .grupo {
         margin-top: -20px;
@@ -337,6 +337,7 @@ img {
 
     .imagem {
         max-height: 100%;
+        opacity: 50%;
     }
 
     .text p {
@@ -346,6 +347,7 @@ img {
         font-size: 30px;
         line-height: 25px;
         padding: 8px;
+        color: black;
     }
 
     .flex {
