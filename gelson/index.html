@@ -4,29 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style1.css" type="text/css" />
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                }else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
     <title>Grupo G5</title>
 </head>
     <body>
-        <header class="header fixo">
-            <img id="logo" src="images/logo.jpeg">
-            <nav class="nav">
-                <ul class="menu">
-                    <li><a id="inicio" href="index1.html">Inicio</a></li>
-                    <li><a href="lojas.html">Lojas</a></li>
-                    <li><a href="/">Contato</a></li>
-                    <li><a href="/">Sobre</a></li>
+        <header class="fixo">
 
-                </ul>
-            </nav>
+            <div class="container">
+                <div id="logo">
+                    <a href=""><img src="./images/logo.jpeg"></a>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
+                        <ul>
+                            <li class="active"><a href="index1.html">Inicio</a> </li>
+                            <li><a href="lojas.html">Lojas</a> </li>
+                            <li><a href="">Contato</a> </li>
+                            <li><a href="">Sobre</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
         </header>
-        <p class="grupo">GRUPO G5</p>
-
+        <div class="grupo">
+            <h1 id="title">GRUPO G5</h3>
+        </div>
 
         <main>
-
-            <div class="main">
-                <h1 class="texto">Gelson Materiais de Construção</h1>
-                <h2 class="texto1">Griffe Móveis & Eletros</h2>
+            <div class="imagem">
+                <img src="./images/back.jpg">
+            </div>
+            <div class="text">
+                <p>Gelson Materiais de Construção</p>
+                <p>&</p>
+                <p>Griffe Móveis & Eletros</p>
             </div>
 
             <div class="row">
@@ -37,93 +64,126 @@
             <section class="flex">
                 <div>
                     <img src="./images/prod1.jpg" alt="produto1">
-                    <h4 class="titulo-produtos">aquecedor de alimentos</h4>
-                    <span class="span-produtos">
+                    <div class="titulo-produtos">
+                        <h4>aquecedor de alimentos</h4>
+                    </div>
+                    <div class="span-produtos">
+                        <span>
                         - Quer comer saudável<br>
                         - Tem uma rotina corrida<br>
                         - Almoça ou janta fora de casa<br>
                         - Não tem microondas<br>
-                        - Quer economizar na alimentação</span>
+                        - Quer economizar na alimentação
+                        </span>
+                    </div>
                 </div>
 
                 <div>
                     <img src="./images/prod2.jpg" alt="produto1">
-                    <h4 class="titulo-produtos">Estofado canto nobrega</h4>
-                    <span class="span-produtos">
+                    <div class="titulo-produtos">
+                        <h4>Estofado canto nobrega</h4>
+                    </div>
+                    <div class="span-produtos">
+                        <span>
                         - Qualidade alinhada ao preço só aqui na Griffe<br>
                         - Móveis e Eletros, o estofado perfeito pra você!<br>
                         - Altura 0,93<br>
                         - Largura 0,75<br>
                         - Comprimento 2,30 x 2,30<br>
                         - VENHA CONFERIR!</span>
+                    </div>
                 </div>
 
                 <div>
                     <img src="./images/prod3.jpg" alt="produto1">
-                    <h4 class="titulo-produtos">Roupeiro paronoá</h4>
-                    <span class="span-produtos">
-                        - Quer comer saudável<br>
-                        - Tem uma rotina corrida<br>
-                        - Almoça ou janta fora de casa<br>
-                        - Não tem microondas<br>
-                        - Quer economizar na alimentação</span>
+                    <div class="titulo-produtos">
+                        <h4>Roupeiro paronoá</h4>
+                    </div>
+                    <div class="span-produtos">
+                        <span>
+                            - Quer comer saudável<br>
+                            - Tem uma rotina corrida<br>
+                            - Almoça ou janta fora de casa<br>
+                            - Não tem microondas<br>
+                            - Quer economizar na alimentação</span>
+                    </div>
                 </div>
 
                 <div>
                     <img src="./images/prod4.jpg" alt="produto1">
-                    <h4 class="titulo-produtos">Triturador forrageiro</h4>
-                    <span class="span-produtos">
-                        Seja para a produção de alimento dos animais
-                        ou para a preparação do adubo natural.
-                        O equipamento é indicado para cortar e triturar forragens
-                        (cana, milho e pastagens), moer sementes e cascas de
-                        cereais para alimentação de animais de todo tipo de
-                        rebanho e triturar galhos, folhas e outros materiais.</span>
+                    <div class="titulo-produtos">
+                        <h4>Triturador forrageiro</h4>
+                    </div>
+                    <div class="span-produtos">
+                        <span class="span-produtos">
+                            Seja para a produção de alimento dos animais
+                            ou para a preparação do adubo natural.
+                            O equipamento é indicado para cortar e triturar forragens
+                            (cana, milho e pastagens), moer sementes e cascas de
+                            cereais para alimentação de animais de todo tipo de
+                            rebanho e triturar galhos, folhas e outros materiais.</span>
+                    </div>
                 </div>
 
                 <div>
                     <img src="./images/prod5.jpg" alt="produto1">
-                    <h4 class="titulo-produtos">Estofado mesquita retrátil</h4>
-                    <span class="span-produtos">
-                        - Quer comer saudável<br>
-                        - Tem uma rotina corrida<br>
-                        - Almoça ou janta fora de casa<br>
-                        - Não tem microondas<br>
-                        - Quer economizar na alimentação</span>
+                    <div>
+                        <h4 class="titulo-produtos">Estofado mesquita retrátil</h4>
+                    </div>
+                    <div class="span-produtos">
+                        <span>
+                            - Quer comer saudável<br>
+                            - Tem uma rotina corrida<br>
+                            - Almoça ou janta fora de casa<br>
+                            - Não tem microondas<br>
+                            - Quer economizar na alimentação</span>
+                    </div>
                 </div>
 
                 <div>
                     <img src="./images/prod6.jpg" alt="produto1">
-                    <h4 class="titulo-produtos">Jogo de chave combinada</h4>
-                    <span class="span-produtos">
-                        - Quer comer saudável<br>
-                        - Tem uma rotina corrida<br>
-                        - Almoça ou janta fora de casa<br>
-                        - Não tem microondas<br>
-                        - Quer economizar na alimentação</span>
+                    <div class="titulo-produtos">
+                        <h4>Jogo de chave combinada</h4>
+                    </div>
+                    <div class="span-produtos">
+                        <span>
+                            - Quer comer saudável<br>
+                            - Tem uma rotina corrida<br>
+                            - Almoça ou janta fora de casa<br>
+                            - Não tem microondas<br>
+                            - Quer economizar na alimentação</span>
+                    </div>
                 </div>
 
                 <div>
                     <img src="./images/prod7.jpg" alt="produto1">
-                    <h4 class="titulo-produtos">Caixas para correspondências</h4>
-                    <span class="span-produtos">
+                    <div class="titulo-produtos">
+                        <h4>Caixas para correspondências</h4>
+                    </div>
+                    <div class="span-produtos">
+                    <span>
                         - Qualidade alinhada ao preço só aqui na Griffe<br>
                         - Móveis e Eletros, o estofado perfeito pra você!<br>
                         - Altura 0,93<br>
                         - Largura 0,75<br>
                         - Comprimento 2,30 x 2,30<br>
                         - VENHA CONFERIR!</span>
+                    </div>
                 </div>
 
                 <div>
                     <img src="./images/prod8.jpg" alt="produto1">
-                    <h4 class="titulo-produtos">aquecedor de alimentos</h4>
-                    <span class="span-produtos">
-                        - Quer comer saudável<br>
-                        - Tem uma rotina corrida<br>
-                        - Almoça ou janta fora de casa<br>
-                        - Não tem microondas<br>
-                        - Quer economizar na alimentação</span>
+                    <div class="titulo-produtos">
+                        <h4>aquecedor de alimentos</h4>
+                    </div>
+                    <div class="span-produtos">
+                        <span class="span-produtos">
+                            - Quer comer saudável<br>
+                            - Tem uma rotina corrida<br>
+                            - Almoça ou janta fora de casa<br>
+                            - Não tem microondas<br>
+                            - Quer economizar na alimentação</span>
+                    </div>
                 </div>
 
             </section>
@@ -131,8 +191,10 @@
 
         </main>
 
-        <footer class="footer">
-            <p>Todos os direitos reservados</p>
+        <footer id="footer">
+            <div class=footer_area>
+            Copyright - Todos os direitos reservados - BY: Juvenal Culino
+            </div>
         </footer>
     </body>
 </html>
