@@ -304,12 +304,13 @@ img {
         display: none;
         position: absolute;
         left: 0;
-        width: 170%;
+        width: 180%;
         background-color: #ffffff;
     }
     nav ul li {
-        background: white;
+        background-color: white;
     }
+
     header {
         height: auto;
     }
@@ -369,6 +370,6 @@ img {
         display: block;
         position: relative;
         bottom: -50px;
-        font-size: 12px;
+        font-size: 9px;
     }
 }
